@@ -100,9 +100,8 @@ public class Ejercicio1YFunciones {
 	 * 3.Decir si ha metido un número primo o no primo.
 	 */
 	public static int PrimoNoPrimo(int num1) {
-		int i,a;
+		int i,a=0;
 		Scanner keyboard=new Scanner(System.in);
-		a=0; //Esta variable la vamos a usar para contar los divisores del número introducido, la inicializamos a 0
 		try {
 		System.out.printf("Introduce un numero: ");
 		num1=keyboard.nextInt();
@@ -114,7 +113,7 @@ public class Ejercicio1YFunciones {
 		    if(num1%i==0) // 
 		    a++;
 		}
-		if(a==2){//Si al final del bucle, a vale 2, el número es primo, porque tiene solamente 2 divisores.
+		if(a==2) {
 		System.out.println("El número es primo");
 		}else {
 		System.out.println("El número no es primo"); 
